@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:icon="@android:drawable/ic_menu_call"
+            android:title="Ligar" />
+        <item
+            android:icon="@android:drawable/ic_input_get"
+            android:title="Contatos" />
+        <item
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:title="Perfil" />
+    </group>
+</menu>
