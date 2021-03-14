@@ -3,10 +3,7 @@ package com.example.contatosdeemergncia;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Paint;
 import android.os.Bundle;
-import android.text.InputType;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -44,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
 
         }else { //Checar Usuário e Senha ou clicar em criar novo
             btLogar = findViewById(R.id.login);
-            btNovo = findViewById(R.id.novo);
+            btNovo = findViewById(R.id.salvar);
             username = findViewById(R.id.username);
             password = findViewById(R.id.password);
 
@@ -89,7 +86,7 @@ public class LoginActivity extends AppCompatActivity {
             btNovo.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(LoginActivity.this, NovoUsuario_Activity.class);
+                    Intent intent = new Intent(LoginActivity.this, NovoUsuarioActivity.class);
                     startActivity(intent);
                 }
             });
