@@ -96,15 +96,18 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     }
 
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        Log.v("PDM", "item: "+item.toString());
         if (item.getItemId() == R.id.tabPerfil) {
             Intent intent = new Intent(this, PerfilActivity.class);
             intent.putExtra("usuario", user);
+            Log.v("PDM", "morremo");
             startActivityForResult(intent, 1111);
         }
 
         if (item.getItemId() == R.id.tabContatos) {
             Intent intent = new Intent(this, AlterarContatosActivity.class);
             intent.putExtra("usuario", user);
+            Log.v("PDM", "morremo");
             startActivityForResult(intent, 1112);
         }
         return true;

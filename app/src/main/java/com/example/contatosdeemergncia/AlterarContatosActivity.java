@@ -38,11 +38,15 @@ public class AlterarContatosActivity extends AppCompatActivity implements Bottom
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.v("PDM", "mudemo");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alterarcontatos);
         edtNome = findViewById(R.id.editBusca);
         bnv = findViewById(R.id.bnv);
+        Log.v("PDM", "agora morremo");
+        Log.v("pdm", this.toString());
         bnv.setOnNavigationItemSelectedListener(this);
+        Log.v("PDM", "vivemo?");
         bnv.setSelectedItemId(R.id.tabContatos);
 
         Intent quemChamou=this.getIntent();
